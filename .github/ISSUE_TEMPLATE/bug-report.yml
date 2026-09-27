@@ -49,6 +49,14 @@ body:
     validations:
       required: true
   - type: input
+    id: installer_source
+    attributes:
+      label: 安装包实际下载来源（选填）
+      description: 请填写这台电脑使用的安装包来自 GitHub 发行页、网盘还是其他来源；这与在哪里看到介绍不同。不确定可留空，请勿填写分享口令或账号信息。
+      placeholder: 例如 GitHub v1.0.2 发行页、网盘
+    validations:
+      required: false
+  - type: input
     id: source
     attributes:
       label: 在哪里看到的软件（选填）
