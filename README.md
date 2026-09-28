@@ -2,9 +2,9 @@
 
 在 Windows 电脑上找剧、接着上次看。支持搜索、收藏、本机观看进度、选集、倍速和自动连播。
 
-**由渠道有数独立维护 · 免费使用 · 当前公开版本 1.0.2**
+**由渠道有数独立维护 · 免费使用 · 当前公开版本 1.0.3**
 
-**[下载 Windows 安装程序](https://github.com/waligoraamodio288-rgb/hongguo-desktop-releases/releases/download/v1.0.2/hongguo-1.0.2-windows-x86_64-setup.exe)**　｜　[三步安装](#三步开始使用)　｜　[下载与安装说明](#下载与安装说明)　｜　[全部版本](https://github.com/waligoraamodio288-rgb/hongguo-desktop-releases/releases)
+**[下载 Windows 安装程序](https://github.com/waligoraamodio288-rgb/hongguo-desktop-releases/releases/download/v1.0.3/hongguo-1.0.3-windows-x86_64-setup.exe)**　｜　[三步安装](#三步开始使用)　｜　[下载与安装说明](#下载与安装说明)　｜　[全部版本](https://github.com/waligoraamodio288-rgb/hongguo-desktop-releases/releases)
 
 Windows 10 / 11 **x64（64 位）** · 安装包 **102.8 MiB**。普通使用只需下载 `.exe`，不需要下载源码 ZIP、`.sig` 或 `latest.json`。
 
@@ -18,7 +18,7 @@ Windows 10 / 11 **x64（64 位）** · 安装包 **102.8 MiB**。普通使用只
 
 ## 三步开始使用
 
-1. 通过上方链接下载 `hongguo-1.0.2-windows-x86_64-setup.exe`。
+1. 通过上方链接下载 `hongguo-1.0.3-windows-x86_64-setup.exe`。
 2. 按安装程序完成安装。已有可用 WebView2 时会复用，缺失时安装程序需联网补齐。如果进度条接近终点但仍显示执行 `guoban-webview2-setup.exe`，安装程序正在等待运行环境补装结束，请先不要关闭窗口或重复运行安装包。若在线补装失败、启动提示缺少 WebView2，或已知网络不稳定，可到[微软官方 WebView2 Runtime 下载页](https://developer.microsoft.com/en-us/microsoft-edge/webview2/)选择 **Evergreen Standalone Installer（x64）** 安装，再重试红果安装或启动。若安装进度长时间没有变化，请记录界面和发生时间后反馈。
 3. 打开应用，浏览分类或搜索剧名，进入详情后播放。观看进度保存在桌面端，不代表同步手机红果 App 账号和历史。
 
@@ -32,7 +32,9 @@ Windows 10 / 11 **x64（64 位）** · 安装包 **102.8 MiB**。普通使用只
 
 ## 当前已知反馈
 
-| 问题 | 1.0.2 状态与处理 |
+v1.0.3 新增热播榜按需加载、播放服务未就绪时的明确提示，以及播放停滞后的手动重试入口；播放停滞原因仍在排查，重试不保证解决所有问题。
+
+| 问题 | 已知状态与处理 |
 | --- | --- |
 | 默认播放清晰度 | 1.0.2 优先选择可识别的较高分辨率片源，避免仅按文件大小选择；实际清晰度取决于内容提供的片源，未新增手动画质切换。 |
 | [切换下一集后倍速失效 #3](https://github.com/waligoraamodio288-rgb/hongguo-desktop-releases/issues/3) | 1.0.1 已修复切换剧集后实际倍速可能恢复为 1 倍的问题。若更新后仍有问题，请补充系统、版本和步骤。 |
@@ -52,15 +54,15 @@ Windows 10 / 11 **x64（64 位）** · 安装包 **102.8 MiB**。普通使用只
 
 当前版本尚未配置 Windows 发布者代码签名，系统可能显示未知发布者或 SmartScreen 提示。请核对下载来源与文件，不要关闭系统防护；某些系统策略可能限制安装。
 
-安装器大小：`107743692` 字节。SHA-256：
+安装器大小：`107753830` 字节。SHA-256：
 
 ```text
-437065b3e97a5536aabacb92d1564fe686029cf5cbf8e7783769fea26bd68da9
+1a18827ad480de8b40e51139beb44aff8a29e9d965a3b8e55fa398283a47bf64
 ```
 
 摘要用于核对文件一致性，不能代替发布者身份认证。应用内更新使用固定公钥验证更新包签名；更新签名与 Windows 发布者代码签名不同。软件启动后可以检查版本，也可在设置中手动检查，仅在用户点击更新后下载安装。
 
-[1.0.2 版本说明与附件](https://github.com/waligoraamodio288-rgb/hongguo-desktop-releases/releases/tag/v1.0.2) · [全部版本](https://github.com/waligoraamodio288-rgb/hongguo-desktop-releases/releases)
+[1.0.3 版本说明与附件](https://github.com/waligoraamodio288-rgb/hongguo-desktop-releases/releases/tag/v1.0.3) · [全部版本](https://github.com/waligoraamodio288-rgb/hongguo-desktop-releases/releases)
 
 ## 关于本仓库
 
