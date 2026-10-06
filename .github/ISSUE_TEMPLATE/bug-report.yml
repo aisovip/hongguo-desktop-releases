@@ -20,7 +20,7 @@ body:
     attributes:
       label: 软件版本
       description: 如果还没装好或无法启动，可以留空；已安装时可在应用设置中查看。
-      placeholder: 例如 1.0.2
+      placeholder: 例如 1.0.4
     validations:
       required: false
   - type: textarea
@@ -48,12 +48,24 @@ body:
         - 不确定或其他
     validations:
       required: true
+  - type: dropdown
+    id: service_status
+    attributes:
+      label: 播放服务状态（选填）
+      description: 如果方便，可在“设置”→“播放服务”点一次“检查连接”后选择。软件无法打开或尚未检查可跳过；服务已连接也不代表视频一定能播放。
+      options:
+        - 已连接
+        - 未连接，或提示内置服务已退出
+        - 尚未检查或无法打开软件
+        - 不确定
+    validations:
+      required: false
   - type: input
     id: installer_source
     attributes:
       label: 安装包实际下载来源（选填）
       description: 请填写这台电脑使用的安装包来自 GitHub 发行页、网盘还是其他来源；这与在哪里看到介绍不同。不确定可留空，请勿填写分享口令或账号信息。
-      placeholder: 例如 GitHub v1.0.2 发行页、网盘
+      placeholder: 例如 GitHub v1.0.4 发行页、网盘
     validations:
       required: false
   - type: input
